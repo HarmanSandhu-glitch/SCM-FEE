@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seo Project</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x=icon" href="images/9.png">
+    <style>
+        .slidershow{
+            width: 880.91px;
+            height: 40rem;
+            overflow: hidden;
+        }
+        .middle{
+            position: relative;
+            
+            
+        }
+        .navigation{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+        }
+        .bar{
+            width: 35px;
+            
+            height: 10px;    
+            border: 2px solid #fff;
+            margin: 6px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .bar:hover{
+            background: #fff;
+        }
+        input[name="r"]{
+            position: absolute;
+            visibility: hidden;
+
+        }
+        .slides{
+            width: 500%;
+            height: 500px;
+            display: flex;
+
+        }
+        .slide{
+            width: 20%;
+            transition: 0.6s;
+        }
+        .slide img{
+            width: 100%;
+            height: 100%;
+        }
+        #r1:checked~.s1{
+            margin-left: 0;
+        }
+        #r2:checked~.s1{
+            margin-left: -20%;
+        }
+        #r3:checked~.s1{
+            margin-left: -40%;
+        }
+        #r4:checked~.s1{
+            margin-left: -60%;
+        }
+        #r5:checked~.s1{
+            margin-left: -80%;
+        }
+        .slidershow1{
+            width: 880.91px;
+            height: 40rem;
+            overflow: hidden;
+        }
+        .middle1{
+            position: relative;
+            
+            
+        }
+        .navigation1{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+        }
+        .bar1{
+            width: 35px;
+            
+            height: 10px;    
+            border: 2px solid #fff;
+            margin: 6px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .bar1:hover{
+            background: #fff;
+        }
+        input[name="a"]{
+            position: absolute;
+            visibility: hidden;
+
+        }
+        .slides1{
+            width: 500%;
+            height: 500px;
+            display: flex;
+
+        }
+        .slide1{
+            width: 20%;
+            transition: 0.6s;
+        }
+        .slide1 img{
+            width: 100%;
+            height: 100%;
+        }
+        #a1:checked~.s11{
+            margin-left: 0;
+        }
+        #a2:checked~.s11{
+            margin-left: -20%;
+        }
+        #a3:checked~.s11{
+            margin-left: -40%;
+        }
+        #a4:checked~.s11{
+            margin-left: -60%;
+        }
+        #a5:checked~.s11{
+            margin-left: -80%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"><span>SNAP</span>ICLES</a>
+
+    <nav class="navbar" style="color: black;">
+        <a href="#banner">Home</a>
+        <a href="#posts">Posts</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner" id="banner">
+
+    <div class="content">
+        <h3>Explore The Nature</h3>
+        <p>India, where every day is a journey that leads to self-discovery and transformation</p>
+        <a href="#" class="btn">Start Discovering</a>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- posts section starts  -->
+
+<section class="container" id="posts">
+
+    <div class="posts-container">
+
+        <div class="post">
+
+
+            <div class="slidershow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <div class="slide">
+                        <img src="images/3.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide s1">
+                        <img src="images/33.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide">
+                        <img src="images/333.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide">
+                        <img src="images/3333.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide">
+                        <img src="images/33333.jpg" alt="" class="image">
+                    </div>
+                   
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                    
+                </div>
+            </div>
+
+
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>Sep-Mar</span>
+            </div>
+            <h3 class="title">1. Udaipur</h3>
+            <p class="text">Udaipur, also known as the City of Lakes, is one of the most visited tourist places in Rajasthan. Located around stunning water lakes and enveloped by the Aravalli Hills in all directions, Udaipur is known for its azure lakes, magnificent palaces, vibrant culture and delectable food. Along with bein...</p>
+            <p class="text">Picturesque and elegant, Udaipur is known by many names, including “the City of Lakes”. Undoubtedly one of India's most romantic cities, it nestles between the glassy waters of its famous lakes and the ancient Aravelli Hill.However, the best time to visit Udaipur is between September and March. During this time the temperature is not too hot, but with the start of November till February the weather is chilly. Udaipur is extremely hot from March to June, and that can be very exhausting for people who want to explore the city.
+            </p>
+            <div class="links">
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                    <span>by Dhrishti Saroj</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-comment"></i>
+                    <span>(45)</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-share-square"></i>
+                    <span>(29)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="post">
+            
+            <div class="slidershow1 middle1">
+                <div class="slides1">
+                    <input type="radio" name="a" id="a1" checked>
+                    <input type="radio" name="a" id="a2">
+                    <input type="radio" name="a" id="a3">
+                    <input type="radio" name="a" id="a4">
+                    <input type="radio" name="a" id="a5">
+                    <div class="slide">
+                        <img src="images/4.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide1 s11">
+                        <img src="images/44.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide1">
+                        <img src="images/444.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide1">
+                        <img src="images/4444.jpg" alt="" class="image">
+                    </div>
+                    <div class="slide1">
+                        <img src="images/44444.jpg" alt="" class="image">
+                    </div>
+                   
+                </div>
+                <div class="navigation1">
+                    <label for="a1" class="bar1"></label>
+                    <label for="a2" class="bar1"></label>
+                    <label for="a3" class="bar1"></label>
+                    <label for="a4" class="bar1"></label>
+                    <label for="a5" class="bar1"></label>
+                    
+                </div>
+            </div>
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>May-Jun</span>
+            </div>
+            <h3 class="title">2. Shimla</h3>
+            <p class="text">Shimla is the capital of Himachal Pradesh and a popular hill-station among Indian families and honeymooners. Situated at the height of 2200m, it was the summer capital of British India. The hill station still retains its old-world charm with beautiful colonial architecture, pedestrian...</p>
+            <p class="text">In 1864 Shimla was declared as the summer capital of India. After Independence, Shimla became the capital of Punjab and was later named the capital of Himachal Pradesh. In 1903 a rail line was constructed between Kalka and Shimla. Shimla has been blessed with all the natural bounties, one can think of.The best time to visit Shimla is during May to June and December to January when romance and beauty are baked into every inch of the soil here. Clear blue skies in summer, sprinkles of powdery snow in the winter, the spicy and earthy scent carried by pines, firs, cedars and oak trees.
+            </p>
+            <div class="links">
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                    <span>by admin</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-comment"></i>
+                    <span>(45)</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-share-square"></i>
+                    <span>(29)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="images/5.jpg" alt="" class="image">
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>1st may, 2021</span>
+            </div>
+            <h3 class="title">3. Kolkata</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam, quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam corporis cum doloremque quasi fugiat exercitationem aliquid cupiditate pariatur. Dolor laboriosam voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur soluta dolorum quis eum quibusdam quam?</p>
+            <div class="links">
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                    <span>by admin</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-comment"></i>
+                    <span>(45)</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-share-square"></i>
+                    <span>(29)</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+
+        <div class="box">
+            <h3 class="title">About me</h3>
+            <div class="about">
+                <img src="images/8'.jpeg" alt="">
+                <h3>Harsh Singla</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, officia.</p>
+                <div class="follow">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">Categories</h3>
+            <div class="category">
+                <a href="#"> Travel <span>42</span></a>
+                <a href="#"> Photography <span>75</span> </a>
+                <a href="#"> Technology <span>22</span> </a>
+                <a href="#"> Fashion <span>17</span> </a>
+                <a href="#"> Study <span>48</span> </a>
+                <a href="#"> Science <span>39</span> </a>
+                <a href="#"> Music <span>59</span> </a>
+                <a href="#"> Public <span>12</span> </a>
+                <a href="#"> Business <span>32</span> </a>
+                <a href="#"> Sports <span>18</span> </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">popular posts</h3>
+            <div class="p-post">
+                <a href="#">
+                    <h3>01. blog title goes here</h3>
+                    <span><i class="far fa-clock"></i>1st may, 2021</span>
+                </a>
+                <a href="#">
+                    <h3>02. blog title goes here</h3>
+                    <span><i class="far fa-clock"></i>1st may, 2021</span>
+                </a>
+                <a href="#">
+                    <h3>03. blog title goes here</h3>
+                    <span><i class="far fa-clock"></i>1st may, 2021</span>
+                </a>
+                <a href="#">
+                    <h3>04. blog title goes here</h3>
+                    <span><i class="far fa-clock"></i>1st may, 2021</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">popular tags</h3>
+            <div class="tags">
+                <a href="#">travel</a>
+                <a href="#">photo</a>
+                <a href="#">science</a>
+                <a href="#">biology</a>
+                <a href="#">aliens</a>
+                <a href="#">nature</a>
+                <a href="#">mountain</a>
+                <a href="#">river</a>
+                <a href="#">camp</a>
+                <a href="#">landscape</a>
+                <a href="#">world</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- posts section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <form action="">
+        <h3>contact me</h3>
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="follow">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="credit">created by <span>Harsh</span> | All rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+    
+</body>
+</html>
